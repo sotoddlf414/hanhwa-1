@@ -1,0 +1,35 @@
+
+/* font-apply----------------------------------------------------- */
+body{font-family: 'Noto Sans KR', sans-serif; }
+.en{font-family: 'Exo 2', sans-serif;}
+/* font-apply-end----------------------------------------------------- */
+.clear:after {content:""; display:block; clear:both;}
+
+
+
+@media screen and (max-width:500px){
+ /* <!-- ---------------------header--------------------------- --> */
+header{width:100%; position:fixed; height:60px; background-color: rgba(0,0,0,0.2); top:0; left:0;}
+header .gnb{padding: 8px 8px;}
+header .jyLogo{float: left;}
+header .gnbItem{float:right;}
+header .gnbItem a{font-size: 40px; color:#fff;}
+/* <!-- ---------------------header-end--------------------------- --> */
+
+/* <!-- ---------------------section view--------------------------- --> */
+
+section.view {background: url(../img/vis_4.jpg) no-repeat center/cover; width:100%; height:542px; box-sizing: border-box; padding-top:120px;}
+section.view .container{width:80%; margin: 0 auto; animation-name: start;animation-duration: 0.8s; }
+@keyframes start{
+    0%{ opacity:0; padding-top: 30px;}
+    60%{ opacity:0; padding-top: 25px;}
+    100%{ opacity:1;padding-top: 0px;}
+}
+section.view p{font-size: 22px; color:#fff; text-shadow: 0 0 5px rgba(8, 8, 8, 0.5); text-align: center; line-height: 25px; margin-bottom: 20px;}
+section.view h3{color:#fff; font-size: 14px; text-shadow: 0 0 5px rgba(8, 8, 8, 0.5); margin-bottom: 30px;}
+section.view a{overflow:hidden; position:relative; display: block; color:#fff; font-size: 14px; border:1px solid #fff; width:152px; text-align: center; margin:0 auto; padding : 8px; border-radius: 50px;}
+section.view a:before{transition:0.5s; content:''; top:0; left:-180px; position: absolute; width:100%; height:100%; background-color: #ff8342;}
+section.view a:hover:before{transition:0.5s; content:''; top:0; left:0px; position: absolute; width:100%; height:100%; background-color: #ff8342; opacity: 0.5;}
+section.view a span{margin-right: 7px;}
+/* <!-- ---------------------section-view-end--------------------------- --> */
+}

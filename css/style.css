@@ -8,8 +8,10 @@ body{font-family: 'Noto Sans KR', sans-serif; }
 
 
 @media screen and (max-width:500px){
+.mo{display : block;}
+span.orange{color:#ff8342;}
  /* <!-- ---------------------header--------------------------- --> */
-header{width:100%; position:fixed; height:60px; background-color: rgba(0,0,0,0.2); top:0; left:0;}
+header{z-index:300; width:100%; position:fixed; height:60px; background-color: rgba(0,0,0,0.2); top:0; left:0;}
 header .gnb{padding: 8px 8px;}
 header .jyLogo{float: left;}
 header .gnbItem{float:right;}
@@ -32,4 +34,88 @@ section.view a:before{transition:0.5s; content:''; top:0; left:-180px; position:
 section.view a:hover:before{transition:0.5s; content:''; top:0; left:0px; position: absolute; width:100%; height:100%; background-color: #ff8342; opacity: 0.5;}
 section.view a span{margin-right: 7px;}
 /* <!-- ---------------------section-view-end--------------------------- --> */
+
+/* <!-- ---------------------section-about--------------------------- --> */
+section.about{ padding:10px 0px;}
+section.about .container{width:95%; margin: 0 auto;}
+section.about .container .title{text-align: center;}
+section.about .container .title h3{font-size: 25px; margin-bottom: 10px;}
+section.about .container .title p{font-size: 14px; margin-bottom: 20px;}
+/* <!-- ========================================================================== --> */
+section.about .container .Into a{display: block; border:1px solid #ddd; margin-bottom: 10px;}
+section.about .container .Into a .pic{width:100%; height:200px;}
+section.about .container .Into a .pic img{width:100%; height:100%;}
+section.about .container .Into a .text{padding:15px;}
+section.about .container .Into a .text h3{font-size: 18px; color:#000; margin-bottom: 5px;}
+section.about .container .Into a .text p{font-size: 15px; color:#000; margin-bottom: 10px;}
+/* <!-- ---------------------section-about-end--------------------------- --> */
+/* <!-- ---------------------section-innovation--------------------------- --> */
+section.innovation{ padding:10px 0px; margin-top: 50px;}
+section.innovation .container{width:95%; margin: 0 auto;}
+section.innovation .container .title{text-align: center;}
+section.innovation .container .title h3{font-size: 25px; margin-bottom: 10px;}
+section.innovation .container .title p{font-size: 14px; margin-bottom: 20px;}
+/* <!-- ========================================================================== --> */
+section.innovation .container .pic{margin-top: 50px; width:100%; height:300px; position: relative;}
+section.innovation .container .pic img{width:100%; height:100%;}
+section.innovation .container .pic .innerBox{width:85%; margin: 0 auto; position: relative; top:-250px;}
+section.innovation .container .pic .innerBox h3{padding:20px; font-size: 20px; background-color: #fff; }
+section.innovation .container .pic .innerBox p{width:100%; box-sizing: border-box; background-color:black; font-size: 14px; margin-bottom: 30px; color:#fff; padding:30px 30px 10px; line-height: 18px;}
+section.innovation .container .pic .innerBox a{margin:20px auto; width:150px; height:40px; border-radius: 30px; line-height:40px; text-align: center; font-size:14px; display: block; color:white; background-color: #ff8342;}
+/* <!-- ---------------------section-innovation-end--------------------------- --> */
+/* <!-- ---------------------section-me--------------------------- --> */
+section.me{margin-top:200px;}
+section.me .container{width:95%; margin: 0 auto;}
+section.me .container .title{text-align: center;}
+section.me .container .title h3{font-size: 25px; margin-bottom: 10px;}
+section.me .container .title p{padding-bottom: 50px; font-size: 14px; margin-bottom: 20px; border-bottom: 2px solid black;}
+/* ====================================================================================================== */
+section.me .container .jobintro{width:100%; border-bottom: 1px solid #ddd;}
+section.me .container .jobintro .innerContainer{padding-left: 50px; padding-right: 5px;}
+section.me .container .jobintro .innerContainer h3{font-size: 18px; font-weight: bold; margin-bottom: 25px;}
+section.me .container .jobintro .innerContainer p{font-size: 14px; line-height: 20px; margin-bottom: 10px;}
+section.me .container .jobintro .innerContainer a{color:black; display: block; font-size: 16px; font-weight: bold; margin-bottom: 20px; }
+section.me .container .jobintro .innerContainer a span{color:#ff8342; font-weight: 1200;}
+/* ====================================================================================================== */
+section.me .container .down{margin-top: 20px;}
+section.me .container .down .innerContainer{border-bottom: 2px solid black;}
+section.me .container .down .textBox{margin:20px 0;}
+section.me .container .down h4{font-style: italic; font-weight: bold; margin-bottom: 10px;}
+section.me .container .down .innerContainer a{color:black; display: block; font-size: 16px; font-weight: bold; margin-bottom: 20px; }
+/* ====================================================================================================== */
+section.me .container a.gotoJob{border-radius: 40px; margin: 50px auto; text-align: center; line-height: 45px; font-size:13.33px; display: block; width:80%; height:45px; color:#fff; background-color: #ff8342;}
+/* <!-- ---------------------section-me-end--------------------------- --> */
+
+/* <!-- ---------------------section-chellenge--------------------------- --> */
+section.challenge{margin-top:130px; padding-bottom: 50px;}
+section.challenge .container{width:95%; margin: 0 auto; }
+section.challenge .container .title{text-align: center;}
+section.challenge .container .title h3{font-size: 25px; margin-bottom: 10px;}
+section.challenge .container .title p{padding-bottom: 10px; font-size: 14px; margin-bottom: 10px;}
+/* ====================================================================================================== */
+section.challenge .container .item{width:100%; padding:10px 0; margin-bottom: 10px;}
+section.challenge .container .item a{display: block;}
+section.challenge .container .item a .imgBox{position:relative; width:100%; height:170px; box-sizing: border-box;}
+section.challenge .container .item a .imgBox img{width:100%; height:100%;}
+ /* cover slide ---------------------------------------------------------------------------------- */
+section.challenge .container .item a .imgBox:before{transition:0.8s; content:''; width:0%; height:100%; background-color: #ff8342; opacity: 0.8; position: absolute; top:0; left:0;}
+section.challenge .container .item a .imgBox:after{transition:0.8s; opacity:0; content:'BLOG'; padding:10px 30px; border:1px solid white; color:#fff; position: absolute; top:70px; left:100px; border-radius: 20px;}
+section.challenge .container .item:hover a .imgBox:before{transition:0.8s; content:''; width:100%; height:100%; background-color: #ff8342; opacity: 0.8; position: absolute; top:0; left:0;}
+section.challenge .container .item:hover a .imgBox:after{transition:0.8s; opacity:1; content:'BLOG'; padding:10px 30px; border:1px solid white; color:#fff; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);  border-radius: 20px;}
+ /* cover slide-end ---------------------------------------------------------------------------------- */
+
+section.challenge .container .item a .textBox{padding:30px 10px 10px;}
+section.challenge .container .item a .textBox h3{color:#ff8342; margin-bottom: 10px; font-weight: bold;}
+section.challenge .container .item a .textBox p.text{font-size: 18px; font-weight: bold; margin-bottom: 30px;}
+section.challenge .container .item a .textBox p.time{color:gray;}
+section.challenge .container .item a .textBox p.time i{margin-right: 10px;}
+/* <!-- ---------------------section-chellenge-end--------------------------- --> */
+
+/* <!-- ---------------------section-footer--------------------------- --> */
+footer .container{width:95%; margin: 0 auto; border-top: 1px solid gray; padding-bottom:30px; padding-top: 30px; text-align: center;}
+footer .container .logo{margin-bottom: 20px;}
+footer .container .text address{font-size: 14px; color:black; margin-bottom: 10px;}
+footer .container .text .copyRight{font-size: 14px; color:gray; margin-bottom: 50px;}
+
+/* <!-- ---------------------section-footer-end--------------------------- --> */
 }
